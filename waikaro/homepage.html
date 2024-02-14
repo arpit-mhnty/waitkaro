@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar Example</title>
+<link rel="stylesheet" type="text/css" href="homepage.css">
+   
+
+</head>
+<body>
+
+<div class="navbar" id="myNavbar">
+    <div class="logo">
+        <img src="logo.png" alt="Logo" style="height: 40px;">
+    </div>
+    <ul class="lines">
+        <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#services">Services</a></li>
+    
+    </ul>
+    
+</div>
+
+<div class="overlay" id="overlay">
+    <div class="overlay-content">
+        <div class="close-btn" onclick="toggleMenu()">
+            &#10006;
+        </div>
+        <a href="#contact">Contact</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+    </div>
+</div>
+
+<div class="kuch" style="background-size: cover;">
+<img src="img/Firefly generate one image wher night time a software character doing something in laptop and laptop (1).jpg">
+</div>
+
+<script>
+    function toggleMenu() {
+        var navbar = document.getElementById("myNavbar");
+        var overlay = document.getElementById("overlay");
+        if (navbar.className === "navbar") {
+            navbar.className += " responsive";
+            overlay.style.display = "block";
+        } else {
+            navbar.className = "navbar";
+            overlay.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
